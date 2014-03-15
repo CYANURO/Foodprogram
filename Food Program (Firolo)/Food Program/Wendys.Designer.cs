@@ -544,6 +544,7 @@
             this.wOrderbutton.TabIndex = 49;
             this.wOrderbutton.Text = "Order";
             this.wOrderbutton.UseVisualStyleBackColor = true;
+            this.wOrderbutton.Click += new System.EventHandler(this.wOrderbutton_Click);
             // 
             // wExitbutton
             // 

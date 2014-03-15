@@ -73,7 +73,7 @@ namespace Food_Program
 
         private void Calculatebutton_Click(object sender, EventArgs e)
         {
-            MyGlobals.OrderTotal = 0m;
+            //MyGlobals.OrderTotal = 0m
 
             if (BigMacnumeric.Value > 0)
             {
@@ -197,7 +197,7 @@ namespace Food_Program
             MyGlobals.OrderConfirmation = mdcCalculatetextBox.Text;
             MyGlobals.OrderTax = mdcTaxtextBox.Text;
             MyGlobals.str_orderTotal = mdcTotaltextBox.Text;
-            MyGlobals.str_delivery = 
+            
 
             //Getting customers order items.
 

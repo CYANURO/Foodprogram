@@ -143,6 +143,19 @@ namespace Food_Program
         {
 
         }
+
+        private void wOrderbutton_Click(object sender, EventArgs e)
+        {
+
+            MyGlobals.CustomersName = wCostumersNametextBox.Text;
+            MyGlobals.CustomersPhone = wCostumersPhonetextBox.Text;
+            MyGlobals.OrderConfirmation = wCalculatetextBox.Text;
+            MyGlobals.OrderTax = wTaxtextBox.Text;
+
+
+            Order_Confirmation wCostumersName = new Order_Confirmation();
+            wCostumersName.Show();
+        }
     }
 }
 

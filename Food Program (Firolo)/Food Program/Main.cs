@@ -52,7 +52,13 @@ namespace Food_Program
             MyGlobals.CustomersName = CostumersNametextBox.Text;
             MyGlobals.CustomersPhone = CostumersPhonetextBox.Text;
             MyGlobals.CustomersAddress = CostumersAddresstextBox.Text;
-          
+
+
+            if (checkBoxDelivery.Checked)
+            {
+                MyGlobals.OrderTotal += 5.00m;
+                MyGlobals.str_delivery = checkBoxDelivery.Text;
+            }
         
             Macdonals mdcCostumersNametextBox = new Macdonals();
             mdcCostumersNametextBox.Show();
