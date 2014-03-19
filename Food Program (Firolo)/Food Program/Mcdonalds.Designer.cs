@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Macdonals));
             this.label1 = new System.Windows.Forms.Label();
             this.McdonaldsAddressTxt = new System.Windows.Forms.Label();
             this.McdonaldsPhoneTxt = new System.Windows.Forms.Label();
@@ -118,7 +119,7 @@
             // McdonaldsAddressTxt
             // 
             this.McdonaldsAddressTxt.AutoSize = true;
-            this.McdonaldsAddressTxt.Location = new System.Drawing.Point(178, 33);
+            this.McdonaldsAddressTxt.Location = new System.Drawing.Point(175, 33);
             this.McdonaldsAddressTxt.Name = "McdonaldsAddressTxt";
             this.McdonaldsAddressTxt.Size = new System.Drawing.Size(232, 13);
             this.McdonaldsAddressTxt.TabIndex = 1;
@@ -128,7 +129,7 @@
             // McdonaldsPhoneTxt
             // 
             this.McdonaldsPhoneTxt.AutoSize = true;
-            this.McdonaldsPhoneTxt.Location = new System.Drawing.Point(258, 46);
+            this.McdonaldsPhoneTxt.Location = new System.Drawing.Point(254, 46);
             this.McdonaldsPhoneTxt.Name = "McdonaldsPhoneTxt";
             this.McdonaldsPhoneTxt.Size = new System.Drawing.Size(79, 13);
             this.McdonaldsPhoneTxt.TabIndex = 2;
@@ -609,6 +610,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(629, 533);
             this.Controls.Add(this.mdcCostumersAddresstextBox);
             this.Controls.Add(this.mdcCostumersAddressTxt);

@@ -36,6 +36,18 @@ namespace Food_Program
         {
             MyGlobals.CustomersName = CostumersNametextBox.Text;
             MyGlobals.CustomersPhone = CostumersPhonetextBox.Text;
+            MyGlobals.CustomersAddress = CostumersAddresstextBox.Text;
+
+            if (checkBoxDelivery.Checked)
+            {
+                MyGlobals.OrderTotal += 5.00m;
+                MyGlobals.str_delivery = checkBoxDelivery.Text;
+                MyGlobals.str_pickup += "3149 W 3500 S, West Valley City, UT 84119";
+            }
+            if (checkBoxPickup.Checked)
+            {
+                MyGlobals.str_pickup += "3149 W 3500 S, West Valley City, UT 84119";
+            }
 
             Wendys wCostumersNametextBox = new Wendys();
             wCostumersNametextBox.Show();
@@ -58,6 +70,11 @@ namespace Food_Program
             {
                 MyGlobals.OrderTotal += 5.00m;
                 MyGlobals.str_delivery = checkBoxDelivery.Text;
+                MyGlobals.str_pickup += "4217 S Redwood Rd, Salt Lake City, UT 84123";
+            }
+            if (checkBoxPickup.Checked)
+            {
+                MyGlobals.str_pickup += "4217 S Redwood Rd, Salt Lake City, UT 84123";
             }
         
             Macdonals mdcCostumersNametextBox = new Macdonals();
@@ -88,7 +105,17 @@ namespace Food_Program
         {
             MyGlobals.CustomersName = CostumersNametextBox.Text;
             MyGlobals.CustomersPhone = CostumersPhonetextBox.Text;
-
+            MyGlobals.CustomersAddress = CostumersAddresstextBox.Text;
+            if (checkBoxDelivery.Checked)
+            {
+                MyGlobals.OrderTotal += 5.00m;
+                MyGlobals.str_delivery = checkBoxDelivery.Text;
+                MyGlobals.str_pickup += "3715 Constitution Blvd, West Valley City, UT 84119";
+            }
+            if (checkBoxPickup.Checked)
+            {
+                MyGlobals.str_pickup += "3715 Constitution Blvd, West Valley City, UT 84119";
+            }
             In_N_Out iCostumersNametextBox = new In_N_Out();
             iCostumersNametextBox.Show();
         }

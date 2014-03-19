@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(In_N_Out));
             this.InNOut = new System.Windows.Forms.Label();
             this.iCostumersName = new System.Windows.Forms.Label();
             this.iCostumersPhone = new System.Windows.Forms.Label();
@@ -72,6 +73,8 @@
             this.iCalculatetextBox = new System.Windows.Forms.TextBox();
             this.iTaxtextBox = new System.Windows.Forms.TextBox();
             this.iTotaltextBox = new System.Windows.Forms.TextBox();
+            this.iCostumersAddresstextBox = new System.Windows.Forms.TextBox();
+            this.iCostumersAddressTxt = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iDoubleDoublenumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iCheeseburgernumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iHamburgernumeric)).BeginInit();
@@ -101,7 +104,7 @@
             // 
             this.iCostumersName.AutoSize = true;
             this.iCostumersName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iCostumersName.Location = new System.Drawing.Point(12, 69);
+            this.iCostumersName.Location = new System.Drawing.Point(12, 79);
             this.iCostumersName.Name = "iCostumersName";
             this.iCostumersName.Size = new System.Drawing.Size(106, 15);
             this.iCostumersName.TabIndex = 1;
@@ -111,7 +114,7 @@
             // 
             this.iCostumersPhone.AutoSize = true;
             this.iCostumersPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iCostumersPhone.Location = new System.Drawing.Point(12, 95);
+            this.iCostumersPhone.Location = new System.Drawing.Point(12, 109);
             this.iCostumersPhone.Name = "iCostumersPhone";
             this.iCostumersPhone.Size = new System.Drawing.Size(118, 15);
             this.iCostumersPhone.TabIndex = 2;
@@ -119,7 +122,7 @@
             // 
             // iCostumersNametextBox
             // 
-            this.iCostumersNametextBox.Location = new System.Drawing.Point(149, 64);
+            this.iCostumersNametextBox.Location = new System.Drawing.Point(149, 79);
             this.iCostumersNametextBox.Name = "iCostumersNametextBox";
             this.iCostumersNametextBox.ReadOnly = true;
             this.iCostumersNametextBox.Size = new System.Drawing.Size(100, 20);
@@ -127,7 +130,7 @@
             // 
             // iCostumersPhonetextBox
             // 
-            this.iCostumersPhonetextBox.Location = new System.Drawing.Point(149, 95);
+            this.iCostumersPhonetextBox.Location = new System.Drawing.Point(149, 109);
             this.iCostumersPhonetextBox.Name = "iCostumersPhonetextBox";
             this.iCostumersPhonetextBox.ReadOnly = true;
             this.iCostumersPhonetextBox.Size = new System.Drawing.Size(100, 20);
@@ -155,7 +158,7 @@
             // 
             this.wHamburgersTxt.AutoSize = true;
             this.wHamburgersTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wHamburgersTxt.Location = new System.Drawing.Point(12, 143);
+            this.wHamburgersTxt.Location = new System.Drawing.Point(12, 172);
             this.wHamburgersTxt.Name = "wHamburgersTxt";
             this.wHamburgersTxt.Size = new System.Drawing.Size(93, 16);
             this.wHamburgersTxt.TabIndex = 7;
@@ -165,7 +168,7 @@
             // 
             this.iDoubleDoubleTxt.AutoSize = true;
             this.iDoubleDoubleTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iDoubleDoubleTxt.Location = new System.Drawing.Point(57, 177);
+            this.iDoubleDoubleTxt.Location = new System.Drawing.Point(57, 203);
             this.iDoubleDoubleTxt.Name = "iDoubleDoubleTxt";
             this.iDoubleDoubleTxt.Size = new System.Drawing.Size(133, 15);
             this.iDoubleDoubleTxt.TabIndex = 8;
@@ -174,7 +177,7 @@
             // iChesseburgerTxt
             // 
             this.iChesseburgerTxt.AutoSize = true;
-            this.iChesseburgerTxt.Location = new System.Drawing.Point(57, 205);
+            this.iChesseburgerTxt.Location = new System.Drawing.Point(57, 231);
             this.iChesseburgerTxt.Name = "iChesseburgerTxt";
             this.iChesseburgerTxt.Size = new System.Drawing.Size(109, 13);
             this.iChesseburgerTxt.TabIndex = 9;
@@ -183,7 +186,7 @@
             // iHamburgerTxt
             // 
             this.iHamburgerTxt.AutoSize = true;
-            this.iHamburgerTxt.Location = new System.Drawing.Point(57, 231);
+            this.iHamburgerTxt.Location = new System.Drawing.Point(57, 257);
             this.iHamburgerTxt.Name = "iHamburgerTxt";
             this.iHamburgerTxt.Size = new System.Drawing.Size(95, 13);
             this.iHamburgerTxt.TabIndex = 10;
@@ -191,21 +194,21 @@
             // 
             // iDoubleDoublenumeric
             // 
-            this.iDoubleDoublenumeric.Location = new System.Drawing.Point(15, 172);
+            this.iDoubleDoublenumeric.Location = new System.Drawing.Point(15, 198);
             this.iDoubleDoublenumeric.Name = "iDoubleDoublenumeric";
             this.iDoubleDoublenumeric.Size = new System.Drawing.Size(36, 20);
             this.iDoubleDoublenumeric.TabIndex = 11;
             // 
             // iCheeseburgernumeric
             // 
-            this.iCheeseburgernumeric.Location = new System.Drawing.Point(15, 198);
+            this.iCheeseburgernumeric.Location = new System.Drawing.Point(15, 224);
             this.iCheeseburgernumeric.Name = "iCheeseburgernumeric";
             this.iCheeseburgernumeric.Size = new System.Drawing.Size(36, 20);
             this.iCheeseburgernumeric.TabIndex = 12;
             // 
             // iHamburgernumeric
             // 
-            this.iHamburgernumeric.Location = new System.Drawing.Point(15, 224);
+            this.iHamburgernumeric.Location = new System.Drawing.Point(15, 250);
             this.iHamburgernumeric.Name = "iHamburgernumeric";
             this.iHamburgernumeric.Size = new System.Drawing.Size(36, 20);
             this.iHamburgernumeric.TabIndex = 13;
@@ -436,8 +439,9 @@
             this.iOrderbutton.Name = "iOrderbutton";
             this.iOrderbutton.Size = new System.Drawing.Size(75, 23);
             this.iOrderbutton.TabIndex = 39;
-            this.iOrderbutton.Text = "Order";
+            this.iOrderbutton.Text = " Order";
             this.iOrderbutton.UseVisualStyleBackColor = true;
+            this.iOrderbutton.Click += new System.EventHandler(this.iOrderbutton_Click);
             // 
             // iExitbutton
             // 
@@ -473,11 +477,33 @@
             this.iTotaltextBox.Size = new System.Drawing.Size(100, 20);
             this.iTotaltextBox.TabIndex = 43;
             // 
+            // iCostumersAddresstextBox
+            // 
+            this.iCostumersAddresstextBox.Location = new System.Drawing.Point(149, 136);
+            this.iCostumersAddresstextBox.Name = "iCostumersAddresstextBox";
+            this.iCostumersAddresstextBox.ReadOnly = true;
+            this.iCostumersAddresstextBox.Size = new System.Drawing.Size(100, 20);
+            this.iCostumersAddresstextBox.TabIndex = 44;
+            // 
+            // iCostumersAddressTxt
+            // 
+            this.iCostumersAddressTxt.AutoSize = true;
+            this.iCostumersAddressTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iCostumersAddressTxt.Location = new System.Drawing.Point(12, 136);
+            this.iCostumersAddressTxt.Name = "iCostumersAddressTxt";
+            this.iCostumersAddressTxt.Size = new System.Drawing.Size(119, 15);
+            this.iCostumersAddressTxt.TabIndex = 45;
+            this.iCostumersAddressTxt.Text = "Costumers Address: ";
+            // 
             // In_N_Out
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(652, 505);
+            this.Controls.Add(this.iCostumersAddressTxt);
+            this.Controls.Add(this.iCostumersAddresstextBox);
             this.Controls.Add(this.iTotaltextBox);
             this.Controls.Add(this.iTaxtextBox);
             this.Controls.Add(this.iCalculatetextBox);
@@ -588,5 +614,7 @@
         private System.Windows.Forms.TextBox iCalculatetextBox;
         private System.Windows.Forms.TextBox iTaxtextBox;
         private System.Windows.Forms.TextBox iTotaltextBox;
+        private System.Windows.Forms.TextBox iCostumersAddresstextBox;
+        private System.Windows.Forms.Label iCostumersAddressTxt;
     }
 }

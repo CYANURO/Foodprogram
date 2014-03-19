@@ -18,6 +18,7 @@ namespace Food_Program
         public static String Order_Totals = "";
         public static String str_orderTotal = "";
         public static String str_delivery = "";
+        public static String str_pickup = "";
     
 }
 }

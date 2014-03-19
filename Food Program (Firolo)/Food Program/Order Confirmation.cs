@@ -23,6 +23,7 @@ namespace Food_Program
             //oTaxtextBox.Text = MyGlobals.OrderTotal.ToString();   // no sirve ... pq?
             orderSummary.Text = MyGlobals.Order_Totals;
             odelivery.Text = MyGlobals.str_delivery;
+            omcdTxt.Text = MyGlobals.str_pickup;
 
 
         }
@@ -40,6 +41,11 @@ namespace Food_Program
         private void Order_Confirmation_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void oExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

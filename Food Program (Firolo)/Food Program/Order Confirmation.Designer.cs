@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Order_Confirmation));
             this.OrderConfirmationTxt = new System.Windows.Forms.Label();
             this.oCustomersNameTxt = new System.Windows.Forms.Label();
             this.oCostumersAddressTxt = new System.Windows.Forms.Label();
@@ -43,17 +44,19 @@
             this.oTotaltextBox = new System.Windows.Forms.TextBox();
             this.orderSummary = new System.Windows.Forms.Label();
             this.odelivery = new System.Windows.Forms.Label();
+            this.omcdTxt = new System.Windows.Forms.Label();
+            this.oExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // OrderConfirmationTxt
             // 
             this.OrderConfirmationTxt.AutoSize = true;
             this.OrderConfirmationTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrderConfirmationTxt.Location = new System.Drawing.Point(175, 9);
+            this.OrderConfirmationTxt.Location = new System.Drawing.Point(192, 9);
             this.OrderConfirmationTxt.Name = "OrderConfirmationTxt";
-            this.OrderConfirmationTxt.Size = new System.Drawing.Size(187, 24);
+            this.OrderConfirmationTxt.Size = new System.Drawing.Size(116, 24);
             this.OrderConfirmationTxt.TabIndex = 0;
-            this.OrderConfirmationTxt.Text = "Order Confirmation";
+            this.OrderConfirmationTxt.Text = "Final Order";
             // 
             // oCustomersNameTxt
             // 
@@ -177,11 +180,33 @@
             this.odelivery.TabIndex = 14;
             this.odelivery.Text = "Delivery + ($5.00)";
             // 
+            // omcdTxt
+            // 
+            this.omcdTxt.AutoSize = true;
+            this.omcdTxt.Location = new System.Drawing.Point(146, 33);
+            this.omcdTxt.Name = "omcdTxt";
+            this.omcdTxt.Size = new System.Drawing.Size(0, 13);
+            this.omcdTxt.TabIndex = 15;
+            // 
+            // oExit
+            // 
+            this.oExit.Location = new System.Drawing.Point(383, 321);
+            this.oExit.Name = "oExit";
+            this.oExit.Size = new System.Drawing.Size(75, 23);
+            this.oExit.TabIndex = 16;
+            this.oExit.Text = "Exit";
+            this.oExit.UseVisualStyleBackColor = true;
+            this.oExit.Click += new System.EventHandler(this.oExit_Click);
+            // 
             // Order_Confirmation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(508, 356);
+            this.Controls.Add(this.oExit);
+            this.Controls.Add(this.omcdTxt);
             this.Controls.Add(this.odelivery);
             this.Controls.Add(this.orderSummary);
             this.Controls.Add(this.oTotaltextBox);
@@ -197,6 +222,7 @@
             this.Controls.Add(this.oCostumersAddressTxt);
             this.Controls.Add(this.oCustomersNameTxt);
             this.Controls.Add(this.OrderConfirmationTxt);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Order_Confirmation";
             this.Text = "Order_Confirmation";
             this.Load += new System.EventHandler(this.Order_Confirmation_Load);
@@ -222,6 +248,8 @@
         private System.Windows.Forms.TextBox oTotaltextBox;
         private System.Windows.Forms.Label orderSummary;
         private System.Windows.Forms.Label odelivery;
+        private System.Windows.Forms.Label omcdTxt;
+        private System.Windows.Forms.Button oExit;
 
     }
 }

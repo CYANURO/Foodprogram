@@ -198,6 +198,8 @@ namespace Food_Program
             MyGlobals.OrderTax = mdcTaxtextBox.Text;
             MyGlobals.str_orderTotal = mdcTotaltextBox.Text;
             
+            
+            
 
             //Getting customers order items.
 

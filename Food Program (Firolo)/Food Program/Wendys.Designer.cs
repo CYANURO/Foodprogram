@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Wendys));
             this.label1 = new System.Windows.Forms.Label();
             this.WendysAddressTxt = new System.Windows.Forms.Label();
             this.WendysPhoneTxt = new System.Windows.Forms.Label();
@@ -82,6 +83,8 @@
             this.wCalculatetextBox = new System.Windows.Forms.TextBox();
             this.wTaxtextBox = new System.Windows.Forms.TextBox();
             this.wTotaltextBox = new System.Windows.Forms.TextBox();
+            this.wCostumersAddress = new System.Windows.Forms.Label();
+            this.wCostumersAddresstextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.Baconatornumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SonOfBaconatornumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wSpicynumeric)).BeginInit();
@@ -135,7 +138,7 @@
             // wCostumersName
             // 
             this.wCostumersName.AutoSize = true;
-            this.wCostumersName.Location = new System.Drawing.Point(12, 52);
+            this.wCostumersName.Location = new System.Drawing.Point(13, 56);
             this.wCostumersName.Name = "wCostumersName";
             this.wCostumersName.Size = new System.Drawing.Size(90, 13);
             this.wCostumersName.TabIndex = 3;
@@ -152,7 +155,7 @@
             // wCostumersPhoneTxt
             // 
             this.wCostumersPhoneTxt.AutoSize = true;
-            this.wCostumersPhoneTxt.Location = new System.Drawing.Point(12, 74);
+            this.wCostumersPhoneTxt.Location = new System.Drawing.Point(13, 82);
             this.wCostumersPhoneTxt.Name = "wCostumersPhoneTxt";
             this.wCostumersPhoneTxt.Size = new System.Drawing.Size(103, 13);
             this.wCostumersPhoneTxt.TabIndex = 5;
@@ -170,7 +173,7 @@
             // 
             this.wBurgersTxt.AutoSize = true;
             this.wBurgersTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wBurgersTxt.Location = new System.Drawing.Point(12, 110);
+            this.wBurgersTxt.Location = new System.Drawing.Point(12, 125);
             this.wBurgersTxt.Name = "wBurgersTxt";
             this.wBurgersTxt.Size = new System.Drawing.Size(179, 16);
             this.wBurgersTxt.TabIndex = 7;
@@ -181,7 +184,7 @@
             // 
             this.BaconatorTxt.AutoSize = true;
             this.BaconatorTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BaconatorTxt.Location = new System.Drawing.Point(51, 140);
+            this.BaconatorTxt.Location = new System.Drawing.Point(51, 149);
             this.BaconatorTxt.Name = "BaconatorTxt";
             this.BaconatorTxt.Size = new System.Drawing.Size(105, 15);
             this.BaconatorTxt.TabIndex = 8;
@@ -191,7 +194,7 @@
             // 
             this.SonOfBaconatorTxt.AutoSize = true;
             this.SonOfBaconatorTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SonOfBaconatorTxt.Location = new System.Drawing.Point(51, 164);
+            this.SonOfBaconatorTxt.Location = new System.Drawing.Point(51, 175);
             this.SonOfBaconatorTxt.Name = "SonOfBaconatorTxt";
             this.SonOfBaconatorTxt.Size = new System.Drawing.Size(143, 15);
             this.SonOfBaconatorTxt.TabIndex = 9;
@@ -201,7 +204,7 @@
             // 
             this.SpicyChipotleTxt.AutoSize = true;
             this.SpicyChipotleTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SpicyChipotleTxt.Location = new System.Drawing.Point(51, 189);
+            this.SpicyChipotleTxt.Location = new System.Drawing.Point(51, 201);
             this.SpicyChipotleTxt.Name = "SpicyChipotleTxt";
             this.SpicyChipotleTxt.Size = new System.Drawing.Size(139, 15);
             this.SpicyChipotleTxt.TabIndex = 10;
@@ -211,7 +214,7 @@
             // 
             this.JrHamburgerTxt.AutoSize = true;
             this.JrHamburgerTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JrHamburgerTxt.Location = new System.Drawing.Point(51, 212);
+            this.JrHamburgerTxt.Location = new System.Drawing.Point(51, 227);
             this.JrHamburgerTxt.Name = "JrHamburgerTxt";
             this.JrHamburgerTxt.Size = new System.Drawing.Size(128, 15);
             this.JrHamburgerTxt.TabIndex = 11;
@@ -221,7 +224,7 @@
             // 
             this.JrCheeseburgerTxt.AutoSize = true;
             this.JrCheeseburgerTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JrCheeseburgerTxt.Location = new System.Drawing.Point(51, 236);
+            this.JrCheeseburgerTxt.Location = new System.Drawing.Point(51, 253);
             this.JrCheeseburgerTxt.Name = "JrCheeseburgerTxt";
             this.JrCheeseburgerTxt.Size = new System.Drawing.Size(143, 15);
             this.JrCheeseburgerTxt.TabIndex = 12;
@@ -231,7 +234,7 @@
             // 
             this.AsiagoTxt.AutoSize = true;
             this.AsiagoTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AsiagoTxt.Location = new System.Drawing.Point(51, 259);
+            this.AsiagoTxt.Location = new System.Drawing.Point(51, 279);
             this.AsiagoTxt.Name = "AsiagoTxt";
             this.AsiagoTxt.Size = new System.Drawing.Size(200, 15);
             this.AsiagoTxt.TabIndex = 13;
@@ -241,7 +244,7 @@
             // 
             this.CripsyChickenTxt.AutoSize = true;
             this.CripsyChickenTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CripsyChickenTxt.Location = new System.Drawing.Point(51, 285);
+            this.CripsyChickenTxt.Location = new System.Drawing.Point(51, 305);
             this.CripsyChickenTxt.Name = "CripsyChickenTxt";
             this.CripsyChickenTxt.Size = new System.Drawing.Size(186, 15);
             this.CripsyChickenTxt.TabIndex = 14;
@@ -249,49 +252,49 @@
             // 
             // Baconatornumeric
             // 
-            this.Baconatornumeric.Location = new System.Drawing.Point(15, 135);
+            this.Baconatornumeric.Location = new System.Drawing.Point(15, 144);
             this.Baconatornumeric.Name = "Baconatornumeric";
             this.Baconatornumeric.Size = new System.Drawing.Size(30, 20);
             this.Baconatornumeric.TabIndex = 15;
             // 
             // SonOfBaconatornumeric
             // 
-            this.SonOfBaconatornumeric.Location = new System.Drawing.Point(15, 161);
+            this.SonOfBaconatornumeric.Location = new System.Drawing.Point(15, 170);
             this.SonOfBaconatornumeric.Name = "SonOfBaconatornumeric";
             this.SonOfBaconatornumeric.Size = new System.Drawing.Size(30, 20);
             this.SonOfBaconatornumeric.TabIndex = 16;
             // 
             // wSpicynumeric
             // 
-            this.wSpicynumeric.Location = new System.Drawing.Point(15, 185);
+            this.wSpicynumeric.Location = new System.Drawing.Point(15, 196);
             this.wSpicynumeric.Name = "wSpicynumeric";
             this.wSpicynumeric.Size = new System.Drawing.Size(30, 20);
             this.wSpicynumeric.TabIndex = 17;
             // 
             // JrHamburgernumeric
             // 
-            this.JrHamburgernumeric.Location = new System.Drawing.Point(15, 207);
+            this.JrHamburgernumeric.Location = new System.Drawing.Point(15, 222);
             this.JrHamburgernumeric.Name = "JrHamburgernumeric";
             this.JrHamburgernumeric.Size = new System.Drawing.Size(30, 20);
             this.JrHamburgernumeric.TabIndex = 18;
             // 
             // JrCheeseburgernumeric
             // 
-            this.JrCheeseburgernumeric.Location = new System.Drawing.Point(15, 231);
+            this.JrCheeseburgernumeric.Location = new System.Drawing.Point(15, 248);
             this.JrCheeseburgernumeric.Name = "JrCheeseburgernumeric";
             this.JrCheeseburgernumeric.Size = new System.Drawing.Size(30, 20);
             this.JrCheeseburgernumeric.TabIndex = 19;
             // 
             // Asiagonumeric
             // 
-            this.Asiagonumeric.Location = new System.Drawing.Point(16, 254);
+            this.Asiagonumeric.Location = new System.Drawing.Point(15, 274);
             this.Asiagonumeric.Name = "Asiagonumeric";
             this.Asiagonumeric.Size = new System.Drawing.Size(30, 20);
             this.Asiagonumeric.TabIndex = 20;
             // 
             // wCrispynumeric
             // 
-            this.wCrispynumeric.Location = new System.Drawing.Point(16, 280);
+            this.wCrispynumeric.Location = new System.Drawing.Point(16, 300);
             this.wCrispynumeric.Name = "wCrispynumeric";
             this.wCrispynumeric.Size = new System.Drawing.Size(29, 20);
             this.wCrispynumeric.TabIndex = 21;
@@ -301,7 +304,7 @@
             // 
             this.wBeverages.AutoSize = true;
             this.wBeverages.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wBeverages.Location = new System.Drawing.Point(12, 317);
+            this.wBeverages.Location = new System.Drawing.Point(12, 334);
             this.wBeverages.Name = "wBeverages";
             this.wBeverages.Size = new System.Drawing.Size(84, 16);
             this.wBeverages.TabIndex = 22;
@@ -311,7 +314,7 @@
             // 
             this.wsSoftDrinkTxt.AutoSize = true;
             this.wsSoftDrinkTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wsSoftDrinkTxt.Location = new System.Drawing.Point(57, 347);
+            this.wsSoftDrinkTxt.Location = new System.Drawing.Point(54, 367);
             this.wsSoftDrinkTxt.Name = "wsSoftDrinkTxt";
             this.wsSoftDrinkTxt.Size = new System.Drawing.Size(137, 15);
             this.wsSoftDrinkTxt.TabIndex = 23;
@@ -321,7 +324,7 @@
             // 
             this.wmSoftDrinkTxt.AutoSize = true;
             this.wmSoftDrinkTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wmSoftDrinkTxt.Location = new System.Drawing.Point(57, 373);
+            this.wmSoftDrinkTxt.Location = new System.Drawing.Point(54, 393);
             this.wmSoftDrinkTxt.Name = "wmSoftDrinkTxt";
             this.wmSoftDrinkTxt.Size = new System.Drawing.Size(151, 15);
             this.wmSoftDrinkTxt.TabIndex = 24;
@@ -331,7 +334,7 @@
             // 
             this.wlSoftDrinkTxt.AutoSize = true;
             this.wlSoftDrinkTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wlSoftDrinkTxt.Location = new System.Drawing.Point(57, 399);
+            this.wlSoftDrinkTxt.Location = new System.Drawing.Point(53, 419);
             this.wlSoftDrinkTxt.Name = "wlSoftDrinkTxt";
             this.wlSoftDrinkTxt.Size = new System.Drawing.Size(137, 15);
             this.wlSoftDrinkTxt.TabIndex = 25;
@@ -341,7 +344,7 @@
             // 
             this.wStrawberryTxt.AutoSize = true;
             this.wStrawberryTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wStrawberryTxt.Location = new System.Drawing.Point(57, 425);
+            this.wStrawberryTxt.Location = new System.Drawing.Point(53, 445);
             this.wStrawberryTxt.Name = "wStrawberryTxt";
             this.wStrawberryTxt.Size = new System.Drawing.Size(170, 15);
             this.wStrawberryTxt.TabIndex = 26;
@@ -351,7 +354,7 @@
             // 
             this.CoffeeTxt.AutoSize = true;
             this.CoffeeTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CoffeeTxt.Location = new System.Drawing.Point(57, 451);
+            this.CoffeeTxt.Location = new System.Drawing.Point(53, 471);
             this.CoffeeTxt.Name = "CoffeeTxt";
             this.CoffeeTxt.Size = new System.Drawing.Size(77, 15);
             this.CoffeeTxt.TabIndex = 27;
@@ -359,35 +362,35 @@
             // 
             // wsSoftDrinknumeric
             // 
-            this.wsSoftDrinknumeric.Location = new System.Drawing.Point(15, 342);
+            this.wsSoftDrinknumeric.Location = new System.Drawing.Point(15, 362);
             this.wsSoftDrinknumeric.Name = "wsSoftDrinknumeric";
             this.wsSoftDrinknumeric.Size = new System.Drawing.Size(33, 20);
             this.wsSoftDrinknumeric.TabIndex = 28;
             // 
             // wmSoftDrinknumeric
             // 
-            this.wmSoftDrinknumeric.Location = new System.Drawing.Point(15, 368);
+            this.wmSoftDrinknumeric.Location = new System.Drawing.Point(15, 388);
             this.wmSoftDrinknumeric.Name = "wmSoftDrinknumeric";
             this.wmSoftDrinknumeric.Size = new System.Drawing.Size(33, 20);
             this.wmSoftDrinknumeric.TabIndex = 29;
             // 
             // wlSoftDrinknumeric
             // 
-            this.wlSoftDrinknumeric.Location = new System.Drawing.Point(16, 394);
+            this.wlSoftDrinknumeric.Location = new System.Drawing.Point(15, 414);
             this.wlSoftDrinknumeric.Name = "wlSoftDrinknumeric";
             this.wlSoftDrinknumeric.Size = new System.Drawing.Size(32, 20);
             this.wlSoftDrinknumeric.TabIndex = 30;
             // 
             // wStrawberrynumeric
             // 
-            this.wStrawberrynumeric.Location = new System.Drawing.Point(16, 420);
+            this.wStrawberrynumeric.Location = new System.Drawing.Point(15, 440);
             this.wStrawberrynumeric.Name = "wStrawberrynumeric";
             this.wStrawberrynumeric.Size = new System.Drawing.Size(32, 20);
             this.wStrawberrynumeric.TabIndex = 31;
             // 
             // Coffeenumeric
             // 
-            this.Coffeenumeric.Location = new System.Drawing.Point(16, 446);
+            this.Coffeenumeric.Location = new System.Drawing.Point(15, 466);
             this.Coffeenumeric.Name = "Coffeenumeric";
             this.Coffeenumeric.Size = new System.Drawing.Size(32, 20);
             this.Coffeenumeric.TabIndex = 32;
@@ -580,11 +583,33 @@
             this.wTotaltextBox.Size = new System.Drawing.Size(100, 20);
             this.wTotaltextBox.TabIndex = 53;
             // 
+            // wCostumersAddress
+            // 
+            this.wCostumersAddress.AutoSize = true;
+            this.wCostumersAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wCostumersAddress.Location = new System.Drawing.Point(13, 110);
+            this.wCostumersAddress.Name = "wCostumersAddress";
+            this.wCostumersAddress.Size = new System.Drawing.Size(100, 13);
+            this.wCostumersAddress.TabIndex = 54;
+            this.wCostumersAddress.Text = "Costumers Address:";
+            // 
+            // wCostumersAddresstextBox
+            // 
+            this.wCostumersAddresstextBox.Location = new System.Drawing.Point(133, 101);
+            this.wCostumersAddresstextBox.Name = "wCostumersAddresstextBox";
+            this.wCostumersAddresstextBox.ReadOnly = true;
+            this.wCostumersAddresstextBox.Size = new System.Drawing.Size(100, 20);
+            this.wCostumersAddresstextBox.TabIndex = 55;
+            // 
             // Wendys
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(644, 501);
+            this.Controls.Add(this.wCostumersAddresstextBox);
+            this.Controls.Add(this.wCostumersAddress);
             this.Controls.Add(this.wTotaltextBox);
             this.Controls.Add(this.wTaxtextBox);
             this.Controls.Add(this.wCalculatetextBox);
@@ -721,5 +746,7 @@
         private System.Windows.Forms.TextBox wCalculatetextBox;
         private System.Windows.Forms.TextBox wTaxtextBox;
         private System.Windows.Forms.TextBox wTotaltextBox;
+        private System.Windows.Forms.Label wCostumersAddress;
+        private System.Windows.Forms.TextBox wCostumersAddresstextBox;
     }
 }

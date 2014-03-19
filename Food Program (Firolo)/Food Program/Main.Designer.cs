@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.buttonMcdonals = new System.Windows.Forms.Button();
             this.textWelcome = new System.Windows.Forms.Label();
             this.CostumersNameTxt = new System.Windows.Forms.Label();
@@ -174,6 +175,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(478, 240);
             this.Controls.Add(this.Exitbutton);
             this.Controls.Add(this.checkBoxDelivery);
